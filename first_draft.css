@@ -1,0 +1,171 @@
+.btn {
+  background: #3498db;
+ 
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 50px;
+  right: 200px;
+ 
+}
+
+.btn:hover {
+  background: #000080;
+  text-decoration: none;
+}
+
+.createbtn { 
+	background: #3498db;
+ 
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 95px;
+  right: 200px;
+  z-index: 1;
+
+}
+
+.createbtn:hover {
+	background: #000080;
+  text-decoration: none;
+}
+
+.ratedance {
+background: #3498db;
+ 
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 225px;
+  right: 200px;
+  z-index: 1;
+
+}
+
+.ratedance:hover {
+	background: #000080;
+  text-decoration: none;
+}
+
+.rateinst {
+background: #3498db;
+ 
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 285px;
+  right: 200px;
+  z-index: 1;
+
+}
+
+.rateinst:hover {
+	background: #000080;
+  text-decoration: none;
+}
+
+.addbtn {
+background: #3498db;
+ 
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 525px;
+  right: 420px;
+  z-index: 1;
+  width: 400px;
+
+}
+
+.addbtn:hover {
+	background: #000080;
+  text-decoration: none;
+}
+
+
+.lindyhoppers {
+	display: block;
+	height:400px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: 100px;
+	right: 320px;
+
+}
+
+.d {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	padding: 5px;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	text-align: center;
+}
+
+.find {
+  background: #3498db;
+  border-width: 0px;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  position: relative;
+}
+
+.find:hover {
+  background: #000080;
+  text-decoration: none;
+}
+
+.findbx {
+	width: 175px;
+}
+
+.nearbx {
+	width: 175px;
+}
+
+.sbx {
+	position: absolute;
+	top: 70px;
+	left: 300px;
+	
+
+}
