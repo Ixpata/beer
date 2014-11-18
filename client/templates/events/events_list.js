@@ -1,4 +1,4 @@
-var postsData = [
+var eventsData = [
   {
     title: 'Introducing Telescope',
     url: 'http://sachagreif.com/introducing-telescope/'
@@ -12,6 +12,6 @@ var postsData = [
     url: 'http://themeteorbook.com'
   }
 ];
-Template.postsList.helpers({
-  posts: postsData
+Template.eventsList.helpers({
+  events: eventsData
 });
