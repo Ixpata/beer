@@ -7,7 +7,11 @@ Template.eventSubmit.events({
 	  title: $(e.target).find('[name=title]').val()
 	};
 
-	event._id = Events.insert(event);
-	Router.go('eventPage', event);
-	}
+	Meteor.call('eventInsert', event, function(error, result) {
+		if (error)
+			return alert(error.reason);
+
+	Router.go('eventPage', {_id: result._id});
+	});
+   }
 });
