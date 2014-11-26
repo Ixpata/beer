@@ -14,8 +14,8 @@ Template.eventSubmit.events({
 		if (result.eventExists)
 			alert('This link has already been posted');
 
-	});
+		Router.go('eventPage', {_id: result._id});
 
-	Router.go('eventsList');
+	});
    }
 });
