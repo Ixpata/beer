@@ -1,4 +1,4 @@
-.grid-block, .main, .event, .comments li, .comment-form {
+.grid-block, .main, .lesson, .comments li, .comment-form {
   background: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -28,51 +28,51 @@ body {
 #spinner {
   height: 300px; }
 
-.event {
+.lesson {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
   *zoom: 1;
   position: relative;
   opacity: 1; }
-  .event:before, .event:after {
+  .lesson:before, .lesson:after {
     content: "";
     display: table; }
-  .event:after {
+  .lesson:after {
     clear: both; }
-  .event.invisible {
+  .lesson.invisible {
     opacity: 0; }
-  .event.instant {
+  .lesson.instant {
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
     transition: none; }
-  .event.animate{
+  .lesson.animate{
     -webkit-transition: all 300ms 0ms;
     -webkit-transition-delay: ease-in;
     -moz-transition: all 300ms 0ms ease-in;
     -o-transition: all 300ms 0ms ease-in;
     transition: all 300ms 0ms ease-in; }
-  .event .upvote {
+  .lesson .upvote {
     display: block;
     margin: 7px 12px 0 0;
     float: left; }
-  .event .event-content {
+  .lesson .lesson-content {
     float: left; }
-    .event .event-content h3 {
+    .lesson .lesson-content h3 {
       margin: 0;
       line-height: 1.4;
       font-size: 18px; }
-      .event .event-content h3 a {
+      .lesson .lesson-content h3 a {
         display: inline-block;
         margin-right: 5px; }
-      .event .event-content h3 span {
+      .lesson .lesson-content h3 span {
         font-weight: normal;
         font-size: 14px;
         display: inline-block;
         color: #aaaaaa; }
-    .event .event-content p {
+    .lesson .lesson-content p {
       margin: 0; }
-  .event .discuss {
+  .lesson .discuss {
     display: block;
     float: right;
     margin-top: 7px; }
@@ -115,7 +115,7 @@ body {
     text-decoration: none;
     background: rgba(0, 0, 0, 0.1); }
 
-.events .spinner-container{
+.lessons .spinner-container{
   position: relative;
   height: 100px;
 }
@@ -150,7 +150,7 @@ body {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  pointer-events: none;
+  pointer-lessons: none;
 }
 .alert {
           animation: fadeOut 2700ms ease-in 0s 1 forwards;
@@ -160,5 +160,5 @@ body {
   float: right;
   clear: both;
   margin-bottom: 5px;
-  pointer-events: auto;
+  pointer-lessons: auto;
 }

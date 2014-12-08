@@ -1,5 +1,5 @@
-Template.eventItem.helpers({
-	ownEvent: function() {
+Template.lessonItem.helpers({
+	ownLesson: function() {
 		return this.userId === Meteor.userId();
 	},
   domain: function() {

@@ -1,15 +1,15 @@
-if (Events.find().count() === 0) {
-  Events.insert({
+if (Lessons.find().count() === 0) {
+  Lessons.insert({
     title: 'Jam Cellar',
     url: 'http://thejamcellar.com'
   });
   
-  Events.insert({
+  Lessons.insert({
     title: 'Glen Echo',
     url: 'http://glenechopark.gov'
   });
   
-  Events.insert({
+  Lessons.insert({
     title: 'Chevy Chase Ballroom',
     url: 'http://gottaswing.com'
   });

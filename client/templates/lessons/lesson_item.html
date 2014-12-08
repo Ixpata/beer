@@ -1,0 +1,12 @@
+<template name="lessonItem">
+  <div class="lesson">
+    <div class="lesson-content">
+      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+    <p>
+    	submitted by {{author}}
+    	{{#if ownLesson}}<a href = "{{pathFor 'lessonEdit'}}">Edit</a>{{/if}}
+    </p>
+    </div>
+    <a href="{{pathFor 'lessonPage'}}" class = "discuss btn btn-default">Discuss</a>
+  </div>
+</template>
