@@ -1,11 +1,14 @@
 <template name="lessonItem">
   <div class="lesson">
     <div class="lesson-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
-    <p>
+          <h3><a href="{{url}}">{{name}}</a></h3>
+<!--           <p>
     	submitted by {{author}}
     	{{#if ownLesson}}<a href = "{{pathFor 'lessonEdit'}}">Edit</a>{{/if}}
-    </p>
+    </p> -->
+    When: 8pm<br/>
+    Where: <a href="{{url}}">Jam Cellar, etc.</a><br/>
+    Price: $60
     </div>
     <a href="{{pathFor 'lessonPage'}}" class = "discuss btn btn-default">Discuss</a>
   </div>

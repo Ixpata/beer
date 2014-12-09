@@ -1,16 +1,26 @@
 if (Lessons.find().count() === 0) {
   Lessons.insert({
-    title: 'Jam Cellar',
-    url: 'http://thejamcellar.com'
+    style: 'Swing',
+    level: 'Beginner',
+    dateTime: 'Tuesday, December 9, 8 pm',
+    
+    name: 'Beginner 8-Count Lindy Hop (Week 3 of 4)',
+    url: 'http://thejamcellar.com',
+    description: '',
+    location: 'Jam Cellar',
+    
+    price: 'Free',
+    
+    danceAfter: true,
+    instructors: ['Hugh Beaumont'],
+    
+    
+
   });
-  
-  Lessons.insert({
-    title: 'Glen Echo',
-    url: 'http://glenechopark.gov'
-  });
-  
-  Lessons.insert({
-    title: 'Chevy Chase Ballroom',
-    url: 'http://gottaswing.com'
+
+  Locations.insert({
+    name: 'Jam Cellar',
+    url: 'http://thejamcellar.com',
+    address: 'Josephine Butler Parks Center, 2437 Fifteenth Street, NW, Washington, DC 20009',
   });
 }
