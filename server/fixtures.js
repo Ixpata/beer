@@ -10,7 +10,7 @@ if (Lessons.find().count() === 0) {
     location: 'Jam Cellar',
     
     price: 'Free',
-    
+    mediaURL: 'http://farm3.staticflickr.com/2003/2358565895_86ef2ea6fc_s.jpg',
     danceAfter: true,
     instructors: ['Hugh Beaumont'],
     
@@ -18,9 +18,9 @@ if (Lessons.find().count() === 0) {
 
   });
 
-  Locations.insert({
+  /*Locations.insert({
     name: 'Jam Cellar',
     url: 'http://thejamcellar.com',
     address: 'Josephine Butler Parks Center, 2437 Fifteenth Street, NW, Washington, DC 20009',
-  });
+  });*/
 }
