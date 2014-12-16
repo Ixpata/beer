@@ -1,9 +1,11 @@
 <template name="lessonsList">
   <div class="lessons">
   <h3>Beginner Swing Lessons</h3>
-  <h3>Tuesday, December 9</h3>
-    {{#each lessons}}
-      {{> lessonItem}}
+    {{#each arrayify groupedDates}}
+      <h3>{{date}}</h3>
+      {{#each value}}
+        {{> lessonItem}}
+      {{/each}}
     {{/each}}
   </div>
 </template>
