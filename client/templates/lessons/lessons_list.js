@@ -3,7 +3,7 @@ Template.lessonsList.helpers({
 		return Lessons.find({}, {sort: {submitted: -1}});
 	},
 	groupedDates: function() {
-		return _.groupBy(Lessons.find().fetch(), 'dateTime');
+		return _.groupBy(Lessons.find().fetch(), 'date');
 	},
 	arrayify: function(obj) {
 		result = [];

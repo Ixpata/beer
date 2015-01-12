@@ -2,7 +2,7 @@ if (Lessons.find().count() === 0) {
   Lessons.insert({
     style: 'Swing',
     level: 'Beginner',
-    dateTime: 'Monday, December 8, 8 pm',
+    date: new Date(2015, 0, 12, 20),
     name: 'Beginner 8-Count Lindy Hop (Week 3 of 4)',
     url: 'http://thejamcellar.com',
     description: '',
@@ -15,7 +15,7 @@ if (Lessons.find().count() === 0) {
   Lessons.insert({
     style: 'Swing',
     level: 'Beginner',
-    dateTime: 'Tuesday, December 9, 8 pm',
+    date: new Date(2015, 0, 13, 20),
     name: 'Beginner 8-Count Lindy Hop (Week 3 of 4)',
     url: 'http://thejamcellar.com',
     description: '',
@@ -28,7 +28,7 @@ if (Lessons.find().count() === 0) {
   Lessons.insert({
     style: 'Swing',
     level: 'Beginner',
-    dateTime: 'Tuesday, December 9, 8 pm',
+    date: new Date(2015, 0, 13, 20),
     name: 'Beginner 8-Count Lindy Hop (Week 3 of 4)',
     url: 'http://thejamcellar.com',
     description: '',
