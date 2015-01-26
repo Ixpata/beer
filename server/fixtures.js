@@ -38,6 +38,19 @@ if (Lessons.find().count() === 0) {
     danceAfter: true,
     instructors: ['Hugh Beaumont'],
   });
+  Lessons.insert({
+    style: 'Swing',
+    level: 'Intermediate',
+    date: new Date(2015, 0, 13, 20),
+    name: 'Intermediate 8-Count Lindy Hop (Week 3 of 4)',
+    url: 'http://thejamcellar.com',
+    description: '',
+    location: 'Jam Cellar',
+    price: 'Free',
+    mediaURL: 'http://farm3.staticflickr.com/2003/2358565895_86ef2ea6fc_s.jpg',
+    danceAfter: true,
+    instructors: ['Hugh Beaumont'],
+  });
   /*Locations.insert({
     name: 'Jam Cellar',
     url: 'http://thejamcellar.com',
