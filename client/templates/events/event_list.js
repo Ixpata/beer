@@ -1,9 +1,10 @@
-Template.lessonsList.events({
+Template.eventsList.events({
   "change .only-beginner input": function (event) {
     Session.set("onlyBeginner", event.target.checked);
   }
 });
-Template.lessonsList.helpers({
+
+Template.eventsList.helpers({
   arrayify: function (obj) {
     result = [];
     for (var key in obj) {
@@ -16,6 +17,6 @@ Template.lessonsList.helpers({
     if (Session.get("onlyBeginner")) {
       selector = {level: "Beginner"};
     }
-    return _.groupBy(Lessons.find(selector).fetch(), 'date');
+    return _.groupBy(Events.find(selector).fetch(), 'date');
   }
 });

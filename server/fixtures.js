@@ -1,5 +1,5 @@
-if (Lessons.find().count() === 0) {
-  Lessons.insert({
+if (Events.find().count() === 0) {
+  Events.insert({
     style: 'Swing',
     level: 'Beginner',
     date: new Date(2015, 0, 12, 20),
@@ -12,7 +12,7 @@ if (Lessons.find().count() === 0) {
     danceAfter: true,
     instructors: ['Hugh Beaumont'],
   });
-  Lessons.insert({
+  Events.insert({
     style: 'Swing',
     level: 'Beginner',
     date: new Date(2015, 0, 13, 20),
@@ -25,7 +25,7 @@ if (Lessons.find().count() === 0) {
     danceAfter: true,
     instructors: ['Hugh Beaumont'],
   });
-  Lessons.insert({
+  Events.insert({
     style: 'Swing',
     level: 'Beginner',
     date: new Date(2015, 0, 13, 20),
@@ -38,7 +38,7 @@ if (Lessons.find().count() === 0) {
     danceAfter: true,
     instructors: ['Hugh Beaumont'],
   });
-  Lessons.insert({
+  Events.insert({
     style: 'Swing',
     level: 'Intermediate',
     date: new Date(2015, 0, 13, 20),

@@ -1,14 +1,14 @@
-<template name="lessonsList">
-  <div class="lessons">
+<template name="eventsList">
+  <div class="events">
     <label class="only-beginner">
       <input type="checkbox" checked="{{onlyBeginner}}" />
       Beginner
     </label>
-    <h3>Swing Lessons</h3>
+    <h3>Swing Events</h3>
     {{#each arrayify groupedDates}}
       <h3>{{formatDate date}}</h3>
       {{#each value}}
-        {{> lessonItem}}
+        {{> eventItem}}
       {{/each}}
     {{/each}}
   </div>
