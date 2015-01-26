@@ -1,4 +1,8 @@
 <template name="lessonsList">
+  <label class="hide-completed">
+  <input type="checkbox" checked="{{hideCompleted}}" />
+  Hide Completed Tasks
+</label>
   <div class="lessons">
   <h3>Beginner Swing Lessons</h3>
     {{#each arrayify groupedDates}}
