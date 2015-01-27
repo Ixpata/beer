@@ -1,6 +1,9 @@
 Template.eventsList.events({
   "change .only-beginner input": function (event) {
     Session.set("onlyBeginner", event.target.checked);
+  },
+  "change .only-intermediate input": function (event) {
+    Session.set("onlyIntermediate", event.target.checked);
   }
 });
 
@@ -16,6 +19,10 @@ Template.eventsList.helpers({
     var selector = {};
     if (Session.get("onlyBeginner")) {
       selector = {level: "Beginner"};
+    } 
+
+    if (Session.get("onlyIntermediate")) {
+      selector = {level: "Intermediate"};
     }
     return _.groupBy(Events.find(selector).fetch(), 'date');
   }

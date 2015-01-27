@@ -4,6 +4,12 @@
       <input type="checkbox" checked="{{onlyBeginner}}" />
       Beginner
     </label>
+
+    <label class="only-intermediate">
+      <input type="checkbox" checked="{{onlyIntermediate}}" />
+      Intermediate
+    </label>
+    
     <h3>Swing Events</h3>
     {{#each arrayify groupedDates}}
       <h3>{{formatDate date}}</h3>
