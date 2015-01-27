@@ -27,3 +27,7 @@ Template.eventsList.helpers({
     return _.groupBy(Events.find(selector).fetch(), 'date');
   }
 });
+
+Template.registerHelper('formatDate', function(date) {
+  return moment(date).format('dddd, MMMM DD');
+});
