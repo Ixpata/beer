@@ -1,11 +1,17 @@
 Template.eventsList.events({
-  "change .only-beginner input": function (event) {
-    Session.set("onlyBeginner", event.target.checked);
+  "change .beginner input": function (event) {
+    Session.set("Beginner", event.target.checked);
   },
-  "change .only-intermediate input": function (event) {
-    Session.set("onlyIntermediate", event.target.checked);
+  "change .intermediate input": function (event) {
+    Session.set("Intermediate", event.target.checked);
   }
 });
+
+function addFacet(or, facet) {
+  if (Session.get(facet)) {
+    or.push({level: facet});
+  } 
+}
 
 Template.eventsList.helpers({
   arrayify: function (obj) {
@@ -17,12 +23,11 @@ Template.eventsList.helpers({
   },
   groupedDates: function () {
     var selector = {};
-    if (Session.get("onlyBeginner")) {
-      selector = {level: "Beginner"};
-    } 
-
-    if (Session.get("onlyIntermediate")) {
-      selector = {level: "Intermediate"};
+    var or = []; 
+    addFacet(or, 'Beginner');
+    addFacet(or, 'Intermediate');
+    if (or.length > 0) {
+      selector = {$or: or};
     }
     return _.groupBy(Events.find(selector).fetch(), 'date');
   }

@@ -1,15 +1,15 @@
 <template name="eventsList">
   <div class="events">
-    <label class="only-beginner">
-      <input type="checkbox" checked="{{onlyBeginner}}" />
+    <label class="beginner">
+      <input type="checkbox" checked="{{Beginner}}" />
       Beginner
     </label>
 
-    <label class="only-intermediate">
-      <input type="checkbox" checked="{{onlyIntermediate}}" />
+    <label class="intermediate">
+      <input type="checkbox" checked="{{Intermediate}}" />
       Intermediate
     </label>
-    
+
     <h3>Swing Events</h3>
     {{#each arrayify groupedDates}}
       <h3>{{formatDate date}}</h3>
