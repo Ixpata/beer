@@ -1,3 +1,9 @@
+if (Businesses.find().count() === 0) {
+  Businesses.insert({
+    name: 'Salsa with Silvia'
+  });
+}
+
 if (Events.find().count() === 0) {
   Events.insert({
     style: 'Swing',
