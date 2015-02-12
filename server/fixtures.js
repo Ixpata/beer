@@ -1,5 +1,5 @@
-if (Businesses.find().count() === 0) {
-  Businesses.insert({
+if (Promoters.find().count() === 0) {
+  Promoters.insert({
     name: 'Salsa with Silvia'
   });
 }
