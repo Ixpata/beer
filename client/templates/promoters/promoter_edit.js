@@ -1,6 +1,6 @@
 Template.promoterEdit.promoters({
   'submit form': function(e) {
-    e.prpromoterDefault();
+    e.preventDefault();
     
     var currentpromoterId = this._id;
     
@@ -20,7 +20,7 @@ Template.promoterEdit.promoters({
   },
   
   'click .delete': function(e) {
-    e.prpromoterDefault();
+     e.preventDefault();
     
     if (confirm("Delete this promoter?")) {
       var currentpromoterId = this._id;
