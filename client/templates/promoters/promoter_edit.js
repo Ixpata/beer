@@ -1,4 +1,4 @@
-Template.promoterEdit.promoters({
+Template.promoterEdit.events({
   'submit form': function(e) {
     e.preventDefault();
     
