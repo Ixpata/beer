@@ -1,10 +1,11 @@
-Template.promoterSubmit.promoters({
+Template.promoterSubmit.events({
   'submit form': function(e) {
-  e.prpromoterDefault();
+  e.preventDefault();
 
   var promoter = {
     url: $(e.target).find('[name=url]').val(),
-    title: $(e.target).find('[name=title]').val()
+    title: $(e.target).find('[name=title]').val(),
+    address: $(e.target).find('[name=address]').val()
   };
 
   Meteor.call('promoterInsert', promoter, function(error, result) {
