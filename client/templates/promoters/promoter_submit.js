@@ -21,3 +21,17 @@ Template.promoterSubmit.events({
     });
   }
 });
+AutoForm.hooks({
+  addPromoter: {
+    before: {
+      insert: function(doc) {
+        console.log(Meteor.user());
+        doc['userId'] = Meteor.user()._id; 
+        return doc;
+        //return false; (synchronous, cancel)
+        //this.result(doc); (asynchronous)
+        //this.result(false); (asynchronous, cancel)
+      }
+    },
+  }
+});
