@@ -1,65 +1,70 @@
-if (Promoters.find().count() === 0) {
-  Promoters.insert({
-    name: 'Salsa with Silvia'
+if (Events.find().count() === 0) {
+  Events.insert({
+    style:       'Swing',
+    level:       'Beginner',
+    date:        new Date(2015, 0, 12, 20),
+    name:        'Beginner 8-Count Lindy Hop (Week 3 of 4)',
+    url:         'http://thejamcellar.com',
+    description: '',
+    location:    'Chevy Chase Ballroom',
+    price:       'Free',
+    mediaURL:    'http://farm3.staticflickr.com/2003/2358565895_86ef2ea6fc_s.jpg',
+    danceAfter:  true,
+    instructors: ['Hugh Beaumont']
+  });
+  Events.insert({
+    style:       'Swing',
+    level:       'Beginner',
+    date:        new Date(2015, 0, 13, 20),
+    name:        'Beginner 8-Count Lindy Hop (Week 3 of 4)',
+    url:         'http://thejamcellar.com',
+    description: '',
+    location:    'Jam Cellar',
+    price:       'Free',
+    mediaURL:    'http://farm3.staticflickr.com/2003/2358565895_86ef2ea6fc_s.jpg',
+    danceAfter:  true,
+    instructors: ['Hugh Beaumont']
+  });
+  Events.insert({
+    style:       'Swing',
+    level:       'Beginner',
+    date:        new Date(2015, 0, 13, 20),
+    name:        'Beginner 8-Count Lindy Hop (Week 3 of 4)',
+    url:         'http://thejamcellar.com',
+    description: '',
+    location:    'Jam Cellar',
+    price:       'Free',
+    mediaURL:    'http://farm3.staticflickr.com/2003/2358565895_86ef2ea6fc_s.jpg',
+    danceAfter:  true,
+    instructors: ['Hugh Beaumont']
+  });
+  Events.insert({
+    style:       'Swing',
+    level:       'Intermediate',
+    date:        new Date(2015, 0, 13, 20),
+    name:        'Intermediate 8-Count Lindy Hop (Week 3 of 4)',
+    url:         'http://thejamcellar.com',
+    description: '',
+    location:    'Jam Cellar',
+    price:       'Free',
+    mediaURL:    'http://farm3.staticflickr.com/2003/2358565895_86ef2ea6fc_s.jpg',
+    danceAfter:  true,
+    instructors: ['Hugh Beaumont']
   });
 }
 
-if (Events.find().count() === 0) {
-  Events.insert({
-    style: 'Swing',
-    level: 'Beginner',
-    date: new Date(2015, 0, 12, 20),
-    name: 'Beginner 8-Count Lindy Hop (Week 3 of 4)',
-    url: 'http://thejamcellar.com',
-    description: '',
-    location: 'Chevy Chase Ballroom',
-    price: 'Free',
-    mediaURL: 'http://farm3.staticflickr.com/2003/2358565895_86ef2ea6fc_s.jpg',
-    danceAfter: true,
-    instructors: ['Hugh Beaumont'],
+//if (Locations.find().count() === 0) {
+//  Locations.insert({
+//    name:    'Jam Cellar',
+//    url:     'http://thejamcellar.com',
+//    address: 'Josephine Butler Parks Center, 2437 Fifteenth Street, NW, Washington, DC 20009',
+//  });
+//}
+
+if (Promoters.find().count() === 0) {
+  Promoters.insert({
+    name:    'Lindy Hoppers, Inc.',
+    website: 'www.lindyhoppersinc.com',
+    email:   'info@lindyhoppersinc.com'
   });
-  Events.insert({
-    style: 'Swing',
-    level: 'Beginner',
-    date: new Date(2015, 0, 13, 20),
-    name: 'Beginner 8-Count Lindy Hop (Week 3 of 4)',
-    url: 'http://thejamcellar.com',
-    description: '',
-    location: 'Jam Cellar',
-    price: 'Free',
-    mediaURL: 'http://farm3.staticflickr.com/2003/2358565895_86ef2ea6fc_s.jpg',
-    danceAfter: true,
-    instructors: ['Hugh Beaumont'],
-  });
-  Events.insert({
-    style: 'Swing',
-    level: 'Beginner',
-    date: new Date(2015, 0, 13, 20),
-    name: 'Beginner 8-Count Lindy Hop (Week 3 of 4)',
-    url: 'http://thejamcellar.com',
-    description: '',
-    location: 'Jam Cellar',
-    price: 'Free',
-    mediaURL: 'http://farm3.staticflickr.com/2003/2358565895_86ef2ea6fc_s.jpg',
-    danceAfter: true,
-    instructors: ['Hugh Beaumont'],
-  });
-  Events.insert({
-    style: 'Swing',
-    level: 'Intermediate',
-    date: new Date(2015, 0, 13, 20),
-    name: 'Intermediate 8-Count Lindy Hop (Week 3 of 4)',
-    url: 'http://thejamcellar.com',
-    description: '',
-    location: 'Jam Cellar',
-    price: 'Free',
-    mediaURL: 'http://farm3.staticflickr.com/2003/2358565895_86ef2ea6fc_s.jpg',
-    danceAfter: true,
-    instructors: ['Hugh Beaumont'],
-  });
-  /*Locations.insert({
-    name: 'Jam Cellar',
-    url: 'http://thejamcellar.com',
-    address: 'Josephine Butler Parks Center, 2437 Fifteenth Street, NW, Washington, DC 20009',
-  });*/
 }
