@@ -1,3 +1,17 @@
 <template name="addPromoter">
-  {{> quickForm collection="Promoters" id="addPromoter" type="insert" omitFields="createdAt, createdBy" template="bootstrap3-horizontal" label-class="col-sm-3" input-col-class="col-sm-9"}}
+  <h1>Vendor Form</h1>
+
+  <p>Thank you for helping make moves2music the one-stop shop for places where people move to music! When great music
+    comes on, all anyone wants to do is move. We’re here to give them a way to do that – whatever way they find most
+    comfortable, convenient, and welcoming. Becoming a moves2music vendor will also help you welcome more folks to your
+    event(s).</p>
+
+  <p>Please fill out a Vendor Form to identify yourself and to tie your event(s) back to the basic description of your
+    efforts/organization.</p>
+
+  <p>After you fill out this Vendor Form, please fill out a separate <b>Activity Form</b> for each class series and for
+    each event that you run or sponsor. You may use similar or the same photos, videos, and/or testimonials across your
+    pages, or not, as you wish.</p>
+  {{> quickForm collection="Promoters" id="addPromoter" type="insert" omitFields="createdAt, createdBy"
+  template="bootstrap3-horizontal" label-class="col-sm-3" input-col-class="col-sm-9"}}
 </template>
